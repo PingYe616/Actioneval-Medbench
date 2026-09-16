@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="title" content="Systematic benchmarking of evaluation paradigms, safety boundaries, and clinical reasoning gaps for multimodal large language models in rehabilitation" />
+    <meta name="description" content="ActionEval-MedBench is a multidimensional video benchmark for evaluating clinical reasoning, safety boundaries, and failure modes of multimodal large language models in rehabilitation." />
+    <meta name="keywords" content="ActionEval-MedBench, multimodal large language models, motor rehabilitation, clinical biomechanics, video understanding, visual grounding, clinical reasoning, benchmark" />
+    <meta name="author" content="Ping Ye, Yu Li, Mengjian Qu, Xuan Zhang, Jing Liu, Tao Zhu, Jun Zhou" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="ActionEval-MedBench" />
+    <meta property="og:title" content="ActionEval-MedBench" />
+    <meta property="og:description" content="A clinically grounded benchmark for multimodal language models in rehabilitation video understanding." />
+    <meta property="og:url" content="https://pingye616.github.io/Actioneval-Medbench/" />
+    <meta property="article:section" content="Research" />
+    <meta name="citation_title" content="Systematic benchmarking of evaluation paradigms, safety boundaries, and clinical reasoning gaps for multimodal large language models in rehabilitation" />
+    <meta name="citation_author" content="Ye, Ping" />
+    <meta name="citation_author" content="Li, Yu" />
+    <meta name="citation_author" content="Qu, Mengjian" />
+    <meta name="citation_publication_date" content="2026" />
+    <meta name="citation_journal_title" content="Scientific Reports" />
+    <meta name="citation_pdf_url" content="https://pingye616.github.io/Actioneval-Medbench/actioneval-medbench-paper.pdf" />
+    <title>ActionEval-MedBench — Academic Project Page</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Systematic benchmarking of evaluation paradigms, safety boundaries, and clinical reasoning gaps for multimodal large language models in rehabilitation","author":[{"@type":"Person","name":"Ping Ye"},{"@type":"Person","name":"Yu Li"},{"@type":"Person","name":"Mengjian Qu"},{"@type":"Person","name":"Xuan Zhang"},{"@type":"Person","name":"Jing Liu"},{"@type":"Person","name":"Tao Zhu"},{"@type":"Person","name":"Jun Zhou"}],"datePublished":"2026","publisher":{"@type":"Organization","name":"Scientific Reports"},"url":"https://pingye616.github.io/Actioneval-Medbench/","isAccessibleForFree":true}
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#top"><span class="brand-mark">AE</span><span>ActionEval-MedBench</span></a>
+        <nav class="topnav" aria-label="Primary navigation"><a class="active" href="#overview">Overview</a><a href="#abstract">Abstract</a><a href="#benchmark">Benchmark</a><a href="#model-chart">Leaderboard</a><a href="#figures">Figures</a><a href="#cite">BibTeX</a></nav>
+        <a class="github-link" href="https://github.com/PingYe616/Actioneval-Medbench" target="_blank" rel="noreferrer"><span>⌘</span> Code <b>↗</b></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap academic-hero" id="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">SCIENTIFIC REPORTS · 2026 · OPEN BENCHMARK</p>
+          <h1>Systematic benchmarking of evaluation paradigms, safety boundaries, and clinical reasoning gaps for multimodal large language models in rehabilitation</h1>
+          <p class="project-kicker">ActionEval-MedBench</p>
+          <p class="hero-summary">A clinically grounded benchmark for asking a harder question than “what action is happening?” — can a multimodal model explain what is abnormal, reason over time, and stay faithful to visible evidence?</p>
+          <p class="authors"><strong>Ping Ye</strong><sup>1,2</sup>, Yu Li<sup>1</sup>, Mengjian Qu<sup>1,3</sup>, Xuan Zhang<sup>1</sup>, Jing Liu<sup>1</sup>, Tao Zhu<sup>2</sup>, Jun Zhou<sup>1</sup><br /><span class="author-affiliations"><sup>1</sup> The First Affiliated Hospital, Department of Rehabilitation, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China<br /><sup>2</sup> School of Computer Science, University of South China, Hengyang, Hunan 421001, China<br /><sup>3</sup> Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Kowloon, Hong Kong SAR, China</span></p>
+          <div class="hero-actions"><a class="button primary" href="./actioneval-medbench-paper.pdf" download>Paper <span>↗</span></a><a class="button secondary" href="https://github.com/PingYe616/Actioneval-Medbench" target="_blank" rel="noreferrer">Code <span>↗</span></a><a class="button quiet" href="#figures">Figures <span>↓</span></a><a class="button quiet" href="#cite">BibTeX <span>↓</span></a></div>
+          <div class="publication-line"><span class="status-dot"></span><strong>Accepted for publication</strong><span>Scientific Reports · Springer Nature</span></div>
+        </div>
+        <div class="hero-figure">
+          <div class="figure-label"><span>FIGURE 1</span><span>ACTIONEVAL-MEDBENCH METHODOLOGY</span></div>
+          <img class="paper-teaser" src="./figures/fig1-methodology.png" alt="Methodological workflow of the ActionEval-MedBench study." />
+          <p class="figure-caption"><b>Method overview.</b> The benchmark moves from expert-validated rehabilitation videos to zero-shot multimodal model evaluation across six clinical dimensions.</p>
+        </div>
+      </section>
+
+      <section class="section intro-section academic-abstract" id="abstract">
+        <div class="wrap narrow-grid"><div><p class="eyebrow">ABSTRACT</p><h2>Models can recognize a movement without understanding it.</h2></div><div class="prose"><p>ActionEval-MedBench is a multidimensional video benchmark for evaluating the clinical reasoning capability, safety boundaries, and failure modes of multimodal large language models in motor rehabilitation and clinical biomechanics. It contains 522 de-identified videos, 3,132 video–MCQ items, and six dimensions spanning semantic action recognition, kinematic alignment, pathological compensation, spatiotemporal dynamics, clinical decision-making, and visual grounding.</p><p>Across 26 models, semantic action recognition remained strong while higher-order clinical dimensions fell below 50% on average. Performance dropped by 9.44 percentage points on the clinical rehabilitation cohort, and nine models produced visually unsupported affirmative selections in negative-probe testing. The results support structured, human-in-the-loop screening—not independent diagnosis.</p></div></div>
+        <div class="wrap stat-ribbon"><div><strong>522</strong><span>de-identified videos</span></div><div><strong>3,132</strong><span>video–MCQ items</span></div><div><strong>26</strong><span>models evaluated</span></div><div><strong>81,006</strong><span>returned responses</span></div><div><strong>99.38%</strong><span>valid-response rate</span></div></div>
+      </section>
+
+      <section class="section benchmark-section" id="benchmark">
+        <div class="wrap"><div class="section-header"><div><p class="eyebrow">BENCHMARK</p><h2>ActionEval-6D</h2></div><p>Six dimensions, arranged from what a model can recognize to what it can safely conclude.</p></div>
+          <div class="dimension-table"><div class="dimension-head"><span>DIMENSION</span><span>WHAT IT TESTS</span><span>ROLE</span></div><div class="dimension-row"><b class="dim-code blue">D1</b><div><strong>Semantic action recognition</strong><p>Identify the broad movement being performed.</p></div><span class="role-tag">FOUNDATION</span></div><div class="dimension-row"><b class="dim-code blue">D2</b><div><strong>Kinematic feature alignment</strong><p>Connect visible motion with relevant movement features.</p></div><span class="role-tag">ALIGNMENT</span></div><div class="dimension-row warm"><b class="dim-code orange">D3</b><div><strong>Pathological compensation</strong><p>Distinguish an abnormal strategy from a completed action.</p></div><span class="role-tag">CLINICAL</span></div><div class="dimension-row warm"><b class="dim-code orange">D4</b><div><strong>Spatiotemporal dynamics</strong><p>Reason about rhythm, timing, trajectory, and change.</p></div><span class="role-tag">CLINICAL</span></div><div class="dimension-row risk"><b class="dim-code red">D5</b><div><strong>Movement quality &amp; decisions</strong><p>Translate observed quality into a defensible clinical judgment.</p></div><span class="role-tag">DECISION</span></div><div class="dimension-row safe"><b class="dim-code teal">D6</b><div><strong>Visual grounding / anti-hallucination</strong><p>Avoid affirming objects or findings that are not visible.</p></div><span class="role-tag">SAFETY</span></div></div>
+          <div class="cohort-summary"><div class="cohort-copy"><p class="eyebrow">DATASET COMPOSITION</p><h3>Two cohorts, one clinical question</h3><p>The functional cohort tests broad movement perception; the clinical cohort adds real-world fine-grained motor impairment and domain shift.</p></div><div class="cohort-visual"><div class="cohort-bar"><span class="clinical" style="width:62.8%"></span><span class="functional" style="width:37.2%"></span></div><div class="cohort-legend"><span><i class="dot clinical-dot"></i>Clinical rehabilitation <b>328</b></span><span><i class="dot functional-dot"></i>Functional biomechanics <b>194</b></span></div></div></div>
+        </div>
+      </section>
+
+      <section class="section performance-chart-section" id="model-chart">
+        <div class="wrap">
+          <div class="section-header chart-section-header"><div><p class="eyebrow">MODEL BENCHMARK</p><h2>Model performance at a glance</h2></div><p>The cohort-weighted ActionEval score puts all 26 evaluated models on one comparable scale.</p></div>
+          <div class="performance-chart-shell">
+            <div class="chart-topline"><div><span class="chart-kicker">ACTIONEVAL-MEDBENCH / FULL LEADERBOARD</span><strong>Weighted F1-score</strong></div><div class="chart-meta"><span>n = 26 models</span><span>65% clinical · 35% functional</span><span>higher is better</span></div></div>
+            <div class="chart-axis"><span></span><span></span><div class="axis-scale"><span>0</span><span>20</span><span>40</span><span>60</span><span>70</span></div><span></span></div>
+            <ol class="performance-bars" aria-label="Full ActionEval-MedBench model leaderboard ordered by weighted F1-score">
+              <li class="performance-row top-row"><span class="bar-rank">01</span><span class="bar-model">Gemini-3.1-Pro-Preview</span><div class="bar-track"><i style="--bar-width:94.5%"></i></div><strong class="bar-score">66.17</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">02</span><span class="bar-model">Doubao-Seed-2.0-Lite-260428</span><div class="bar-track"><i style="--bar-width:94.5%"></i></div><strong class="bar-score">66.15</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">03</span><span class="bar-model">Gemini-3.5-Flash</span><div class="bar-track"><i style="--bar-width:93.9%"></i></div><strong class="bar-score">65.74</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">04</span><span class="bar-model">Claude-Opus-4-7</span><div class="bar-track"><i style="--bar-width:93.7%"></i></div><strong class="bar-score">65.61</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">05</span><span class="bar-model">GLM-5V-Turbo</span><div class="bar-track"><i style="--bar-width:93.7%"></i></div><strong class="bar-score">65.60</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">06</span><span class="bar-model">GPT-5.5</span><div class="bar-track"><i style="--bar-width:93.5%"></i></div><strong class="bar-score">65.46</strong></li>
+              <li class="performance-row top-row"><span class="bar-rank">07</span><span class="bar-model">Kimi-K2.6</span><div class="bar-track"><i style="--bar-width:93.4%"></i></div><strong class="bar-score">65.37</strong></li>
+              <li class="performance-row"><span class="bar-rank">08</span><span class="bar-model">Doubao-Seed-2.0-Pro-260215</span><div class="bar-track"><i style="--bar-width:90.6%"></i></div><strong class="bar-score">63.39</strong></li>
+              <li class="performance-row"><span class="bar-rank">09</span><span class="bar-model">Gemini-3.1-Flash-Lite-Preview</span><div class="bar-track"><i style="--bar-width:88.4%"></i></div><strong class="bar-score">61.89</strong></li>
+              <li class="performance-row"><span class="bar-rank">10</span><span class="bar-model">Doubao-Seed-2.0-Mini-260428</span><div class="bar-track"><i style="--bar-width:88.3%"></i></div><strong class="bar-score">61.83</strong></li>
+              <li class="performance-row"><span class="bar-rank">11</span><span class="bar-model">Qwen3.6-Plus</span><div class="bar-track"><i style="--bar-width:88.1%"></i></div><strong class="bar-score">61.65</strong></li>
+              <li class="performance-row"><span class="bar-rank">12</span><span class="bar-model">Qwen3.6-35B-A3B</span><div class="bar-track"><i style="--bar-width:87.3%"></i></div><strong class="bar-score">61.11</strong></li>
+              <li class="performance-row"><span class="bar-rank">13</span><span class="bar-model">Qwen3.6-27B</span><div class="bar-track"><i style="--bar-width:86.9%"></i></div><strong class="bar-score">60.80</strong></li>
+              <li class="performance-row"><span class="bar-rank">14</span><span class="bar-model">Qwen3.6-Flash</span><div class="bar-track"><i style="--bar-width:86.6%"></i></div><strong class="bar-score">60.60</strong></li>
+              <li class="performance-row"><span class="bar-rank">15</span><span class="bar-model">Grok-4.2</span><div class="bar-track"><i style="--bar-width:83.7%"></i></div><strong class="bar-score">58.57</strong></li>
+              <li class="performance-row"><span class="bar-rank">16</span><span class="bar-model">Step-3</span><div class="bar-track"><i style="--bar-width:82.7%"></i></div><strong class="bar-score">57.92</strong></li>
+              <li class="performance-row"><span class="bar-rank">17</span><span class="bar-model">Meta-Llama/Llama-4-Scout</span><div class="bar-track"><i style="--bar-width:82.7%"></i></div><strong class="bar-score">57.91</strong></li>
+              <li class="performance-row"><span class="bar-rank">18</span><span class="bar-model">Intern-S1-Pro</span><div class="bar-track"><i style="--bar-width:82.0%"></i></div><strong class="bar-score">57.41</strong></li>
+              <li class="performance-row"><span class="bar-rank">19</span><span class="bar-model">MiniMax-M2.7-Highspeed</span><div class="bar-track"><i style="--bar-width:80.9%"></i></div><strong class="bar-score">56.64</strong></li>
+              <li class="performance-row"><span class="bar-rank">20</span><span class="bar-model">Claude-Opus-4-6</span><div class="bar-track"><i style="--bar-width:78.7%"></i></div><strong class="bar-score">55.07</strong></li>
+              <li class="performance-row"><span class="bar-rank">21</span><span class="bar-model">InternVL3.5-241B-A28B</span><div class="bar-track"><i style="--bar-width:77.3%"></i></div><strong class="bar-score">54.12</strong></li>
+              <li class="performance-row"><span class="bar-rank">22</span><span class="bar-model">Claude-Sonnet-4-6</span><div class="bar-track"><i style="--bar-width:76.6%"></i></div><strong class="bar-score">53.61</strong></li>
+              <li class="performance-row"><span class="bar-rank">23</span><span class="bar-model">MiniMax-M2.7</span><div class="bar-track"><i style="--bar-width:71.0%"></i></div><strong class="bar-score">49.67</strong></li>
+              <li class="performance-row"><span class="bar-rank">24</span><span class="bar-model">Intern-S1-Mini</span><div class="bar-track"><i style="--bar-width:69.2%"></i></div><strong class="bar-score">48.46</strong></li>
+              <li class="performance-row"><span class="bar-rank">25</span><span class="bar-model">Step-1o-Turbo-Vision</span><div class="bar-track"><i style="--bar-width:66.5%"></i></div><strong class="bar-score">46.56</strong></li>
+              <li class="performance-row"><span class="bar-rank">26</span><span class="bar-model">Meta-Llama/Llama-4-Maverick</span><div class="bar-track"><i style="--bar-width:66.0%"></i></div><strong class="bar-score">46.20</strong></li>
+            </ol>
+            <p class="chart-footnote">Point estimates reproduced from Table C.15 of the paper. The bar scale is 0–70 weighted F1-score; the top-seven cluster is highlighted in cyan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section figures-section" id="figures">
+        <div class="wrap">
+          <div class="section-header"><div><p class="eyebrow">FIGURES FROM THE PAPER</p><h2>Four views of model behavior</h2></div><p>Each figure now has a consistent reading frame, so the visual evidence feels like a curated paper figure plate rather than a loose screenshot grid.</p></div>
+          <div class="paper-figure-grid">
+            <figure class="paper-figure"><div class="figure-frame"><img src="./figures/fig3-heatmap.png" alt="Heatmap of ActionEval-6D performance across 26 models." loading="lazy" /></div><figcaption><b>Fig. 3.</b> Dimension-wise performance reveals strong D1/D6 scores and a sharp D3–D5 clinical reasoning drop.</figcaption></figure>
+            <figure class="paper-figure"><div class="figure-frame"><img src="./figures/fig4-reasoning-gap.png" alt="Scatter plot and bar chart showing the clinical reasoning gap." loading="lazy" /></div><figcaption><b>Fig. 4.</b> The perception-to-reasoning cliff across the evaluated models.</figcaption></figure>
+            <figure class="paper-figure"><div class="figure-frame"><img src="./figures/fig6-cohorts.png" alt="Functional biomechanics and clinical rehabilitation cohort leaderboards." loading="lazy" /></div><figcaption><b>Fig. 6.</b> Independent cohort leaderboards expose the clinical domain shift.</figcaption></figure>
+            <figure class="paper-figure"><div class="figure-frame"><img src="./figures/fig8-safety.png" alt="Scatter plot of weighted ActionEval score and D6 false-positive visual-grounding rate." loading="lazy" /></div><figcaption><b>Fig. 8.</b> The dedicated D6 safety endpoint adds information beyond a near-ceiling D6 F1 score.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section leaderboard-section" id="leaderboard">
+        <div class="wrap"><div class="section-header"><div><p class="eyebrow">EXPERIMENT RESULTS</p><h2>Leaderboard &amp; profiles</h2></div><p>A compact view of the overall ranking, dimension-level behavior, and cohort shift.</p></div>
+          <div class="result-tabs" role="tablist"><button class="result-tab active" data-view="composite" role="tab">Composite score</button><button class="result-tab" data-view="dimensions" role="tab">Dimension means</button><button class="result-tab" data-view="cohorts" role="tab">Cohort shift</button></div>
+          <div class="result-view active" id="view-composite" data-panel="composite"><div class="table-caption"><span>COHORT-WEIGHTED ACTIONEVAL SCORE</span><em>Top-6 cluster · 0 / 15 adjusted comparisons significant</em></div><div class="leaderboard-table"><div class="leaderboard-header"><span>#</span><span>MODEL</span><span>SCORE</span><span>SOURCE</span></div><div class="model-row"><span>01</span><strong>Gemini-3.1-Pro-Preview</strong><div class="score-cell"><i style="width:94.5%"></i><b>66.17</b></div><span class="source-type hosted">HOSTED</span></div><div class="model-row"><span>02</span><strong>Doubao-Seed-2.0-Lite-260428</strong><div class="score-cell"><i style="width:94.5%"></i><b>66.15</b></div><span class="source-type hosted">HOSTED</span></div><div class="model-row"><span>03</span><strong>Gemini-3.5-Flash</strong><div class="score-cell"><i style="width:93.9%"></i><b>65.74</b></div><span class="source-type hosted">HOSTED</span></div><div class="model-row"><span>04</span><strong>Claude-Opus-4-7</strong><div class="score-cell"><i style="width:93.7%"></i><b>65.61</b></div><span class="source-type hosted">HOSTED</span></div><div class="model-row"><span>05</span><strong>GLM-5V-Turbo</strong><div class="score-cell"><i style="width:93.7%"></i><b>65.60</b></div><span class="source-type open">OPEN / LOCAL</span></div><div class="model-row"><span>06</span><strong>GPT-5.5</strong><div class="score-cell"><i style="width:93.5%"></i><b>65.46</b></div><span class="source-type hosted">HOSTED</span></div></div></div>
+          <div class="result-view" id="view-dimensions" data-panel="dimensions"><div class="table-caption"><span>CROSS-MODEL MEAN SET-F1</span><em>Primary returned-response scoring rule</em></div><div class="dimension-results"><div><span>D1 · Semantic action</span><i><b style="width:91.1%"></b></i><strong>91.1</strong></div><div><span>D2 · Kinematic alignment</span><i><b style="width:60.4%"></b></i><strong>60.4</strong></div><div><span>D3 · Compensation</span><i><b style="width:45.2%"></b></i><strong>45.2</strong></div><div><span>D4 · Dynamics</span><i><b style="width:49.2%"></b></i><strong>49.2</strong></div><div><span>D5 · Decisions</span><i><b style="width:43.1%"></b></i><strong>43.1</strong></div><div><span>D6 · Visual grounding</span><i><b class="safe-fill" style="width:98.7%"></b></i><strong>98.7</strong></div></div></div>
+          <div class="result-view" id="view-cohorts" data-panel="cohorts"><div class="cohort-result-grid"><div class="cohort-result-card"><span class="eyebrow">FUNCTIONAL BIOMECHANICS</span><strong>Gross-motor reference cohort</strong><p>Standardized functional videos provide a broad perception baseline across large-joint movement categories.</p><b>194 videos</b></div><div class="cohort-result-card clinical-card"><span class="eyebrow">CLINICAL REHABILITATION</span><strong>Fine-grained clinical cohort</strong><p>Real-world upper-limb rehabilitation videos introduce pathology, compensation, and domain-shift burden.</p><b>328 videos</b></div><div class="cohort-result-card shift-card"><span class="eyebrow">CROSS-COHORT SHIFT</span><strong>Clinical performance drop</strong><p>The clinical cohort was lower by an average of 9.44 percentage points.</p><b>−9.44 pp</b></div></div></div>
+        </div>
+      </section>
+
+      <section class="section analysis-section" id="analysis">
+        <div class="wrap"><div class="section-header"><div><p class="eyebrow">ANALYSIS</p><h2>The perception-to-reasoning cliff</h2></div><p>Small leaderboard differences hide a larger and more consequential capability gap.</p></div><div class="analysis-grid"><div class="cliff-card"><div class="cliff-head"><span>D1 · broad action</span><b>91.1</b></div><div class="cliff-meter"><i style="width:91.1%"></i></div><div class="cliff-head lower"><span>D3–D5 · clinical reasoning mean</span><b>45.8</b></div><div class="cliff-meter"><i style="width:45.8%"></i></div><div class="cliff-gap"><strong>43.57 pp</strong><span>median clinical reasoning gap across models</span></div></div><div class="analysis-copy"><p class="eyebrow">WHAT CHANGES</p><h3>From “what is happening?” to “what should a clinician believe?”</h3><p>Performance is strongest on semantic action recognition, then falls when the task requires causal interpretation, temporal modeling, or a clinical decision. The benchmark therefore profiles capabilities instead of treating one aggregate score as the whole story.</p><div class="analysis-notes"><span><b>01</b> Pattern recognition remains strong.</span><span><b>02</b> D3–D5 expose clinical reasoning gaps.</span><span><b>03</b> D6 provides an independent safety probe.</span></div></div></div><div class="failure-grid"><article><span>FAILURE MODE 01</span><h3>Domain shift</h3><p>Standardized functional actions do not fully prepare models for fine-grained clinical rehabilitation footage.</p></article><article><span>FAILURE MODE 02</span><h3>Temporal reasoning</h3><p>Subtle rhythm and trajectory changes are harder to track than the presence of a broad action.</p></article><article><span>FAILURE MODE 03</span><h3>Unsupported affirmation</h3><p>Nine models produced visually unsupported affirmative selections in negative-probe testing.</p></article></div></div>
+      </section>
+
+      <section class="boundary-band"><div class="wrap boundary-inner"><div class="boundary-symbol">!</div><div><p class="eyebrow">SAFETY BOUNDARY</p><h2>Promising for structured screening. Not an independent diagnostic tool.</h2><p>Human-in-the-loop deployment is not an afterthought; it is the operational conclusion of the benchmark.</p></div><div class="boundary-score"><strong>6.51%</strong><span>highest FPD<sub>6</sub></span></div></div></section>
+
+      <section class="section resources-section" id="cite">
+        <div class="wrap"><div class="section-header"><div><p class="eyebrow">OPEN MATERIALS</p><h2>Paper, code, citation</h2></div><p>Designed to be read like a paper and used like a benchmark.</p></div><div class="resource-links"><a href="./actioneval-medbench-paper.pdf" download><span>↓</span><div><strong>Paper PDF</strong><small>Accepted manuscript</small></div><b>↗</b></a><a href="https://github.com/PingYe616/Actioneval-Medbench" target="_blank" rel="noreferrer"><span>⌘</span><div><strong>GitHub repository</strong><small>Code and updates</small></div><b>↗</b></a><a href="#citation"><span>§</span><div><strong>BibTeX citation</strong><small>Copy the record below</small></div><b>↓</b></a></div><div class="citation-box" id="citation"><code id="citation-text">@article{ye2026actioneval,<br />  title = {Systematic benchmarking of evaluation paradigms, safety boundaries, and clinical reasoning gaps for multimodal large language models in rehabilitation},<br />  author = {Ye, Ping and Li, Yu and Qu, Mengjian and others},<br />  journal = {Scientific Reports},<br />  year = {2026}<br />}</code><button class="copy-button" type="button" data-copy-target="citation-text">Copy citation</button></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="wrap"><span><b>AE</b> ActionEval-MedBench</span><span>Evidence-grounded rehabilitation AI</span><span>Adapted from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noreferrer">Academic Project Page Template</a></span><a href="#top">Back to top ↑</a></div></footer>
+    <div class="toast" role="status" aria-live="polite">Citation copied</div>
+    <script src="./app.js"></script>
+  </body>
+</html>
